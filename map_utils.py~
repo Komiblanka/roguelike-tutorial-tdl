@@ -45,6 +45,7 @@ def make_map(game_map, max_rooms, room_min_size, room_max_size, map_width, map_h
 
             # center coordinates of new room, will be useful later
             (new_x, new_y) = new_room.center()
+            room_no = entity(new_x, new_y, chr(65+num_rooms), color.white)
 
             if num_rooms == 0:
                 # this is the first room, where the player starts at
