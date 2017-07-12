@@ -1,0 +1,5 @@
+# Ignore vi files
+*~
+
+# Ignore pychache
+__pycache__
