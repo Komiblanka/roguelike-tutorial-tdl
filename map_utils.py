@@ -46,8 +46,8 @@ def place_entities(room, entities, max_monsters_per_room, colors):
 
     for i in range(number_of_monsters):
         # Choose random location in the room
-        x = randint(room.x1+1, room.x2+1)
-        y = randint(room.y1+1, room.y2+1)
+        x = randint(room.x1+1, room.x2-1)
+        y = randint(room.y1+1, room.y2-1)
 
         if not any([entity for entity in entities if entity.x == x and entity.y == y]):
             if randint(0, 100) < 80:
