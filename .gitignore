@@ -1,5 +1,6 @@
 # Ignore vi files
 *~
+*.swp
 
 # Ignore pychache
 __pycache__
